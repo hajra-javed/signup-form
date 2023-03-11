@@ -1,34 +1,34 @@
 @font-face {
-    font-family: Bahgila;
-    src: url('./Bahgila.otf');
+    font-family: Prognostic;
+    src: url('./Prognostic-MBRe.ttf');
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
     display: flex;
+    font-family: sans-serif;
 }
 
-.img-container{
+.img-container {
     height: 100%;
-    width: 30%;
     /* background-color: yellow; */
-    flex: 1 1 40%;
+    flex: 1 1 30%;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
 
-img{
+img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.logo-container{
+.logo-container {
     background-color: white;
     position: absolute;
     height: 20vh;
@@ -37,9 +37,9 @@ img{
     opacity: 30%;
 }
 
-.logo{
-    font-family: Bahgila;
-    font-size: 4rem;
+.logo {
+    font-family: Prognostic, sans-serif;
+    font-size: 3rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -51,12 +51,99 @@ img{
     color: white;
 }
 
-.form{
-    background-color: lavenderblush;
-    flex: 1 1 75%;
-    /* flex-grow: 1; */
+.logo-title {
+    text-shadow: 0px 0px 5px powderblue;
 }
 
-svg path{
-fill: hotpink;
+svg path {
+    fill: hotpink;
+}
+
+.content {
+    flex: 1 1 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: whitesmoke;
+}
+
+.content>* {
+    flex: 1;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+
+.hero {
+    justify-content: flex-end;
+}
+
+.hero:first-child {
+    text-transform: ;
+}
+
+form {
+    background-color: white;
+    justify-content: space-around;
+    box-shadow: 4px 2px 5px lightgray;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.75rem;
+    gap: 2vh;
+    color: darkslategray;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+    gap: 0.2vh;
+}
+
+input {
+    width: 20vw;
+    height: 3.5vh;
+    border-color: lightgray;
+    border-radius: 4px;
+    border-style: solid;
+    border: 1px solid lightgray;
+}
+
+.signup {
+    gap: 3vh;
+    margin-top: 3vh;
+}
+
+.signup>button {
+    height: 5vh;
+    width: 15vw;
+    background-color: darksalmon;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px hotpink;
+}
+
+.login {
+    background-color: whitesmoke;
+    border: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding: 0;
+    color: hotpink;
+    text-shadow: 0 0 2px pink;
+}
+
+button:hover {
+    cursor: pointer;
 }
