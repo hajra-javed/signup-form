@@ -118,6 +118,11 @@ input {
     border: 1px solid lightgray;
 }
 
+input:focus-visible{
+    outline: solid 1px lightblue;
+    box-shadow: 2px 2px 4px gray;
+}
+
 .signup {
     gap: 3vh;
     margin-top: 3vh;
@@ -135,13 +140,12 @@ input {
 }
 
 .login {
-    background-color: whitesmoke;
-    border: none;
     font-size: 1rem;
     font-family: sans-serif;
     padding: 0;
     color: hotpink;
     text-shadow: 0 0 2px pink;
+    text-decoration: none;
 }
 
 button:hover {
