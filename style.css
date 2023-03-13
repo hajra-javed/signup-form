@@ -10,6 +10,7 @@ body {
     width: 100vw;
     display: flex;
     font-family: sans-serif;
+    position: relative;
 }
 
 .img-container {
@@ -154,4 +155,10 @@ button:hover {
 
 .error:invalid{
     outline: solid 1px red;
+}
+
+.footer{
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
 }
