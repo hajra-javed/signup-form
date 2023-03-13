@@ -151,3 +151,7 @@ input:focus-visible{
 button:hover {
     cursor: pointer;
 }
+
+.error:invalid{
+    outline: solid 1px red;
+}
