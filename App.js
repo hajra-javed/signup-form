@@ -7,12 +7,15 @@ const btn = document.querySelector('button');
 
 btn.addEventListener('click', (e) => {
     // e.preventDefault();
-    for (let i = 0; i < inputs.length - 1; i++) {
+    for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].required && inputs[i].value === '') {
             // console.log(inputs[i].type);
             inputs[i].classList.add('error');
             return;
         }
+    }
+    if (confirmPassword === ''){
+        return;
     }
     if (password.value !== confirmPassword.value){
         confirmPassword.classList.add('error');
